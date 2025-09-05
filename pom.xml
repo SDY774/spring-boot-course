@@ -8,7 +8,7 @@
         <version>3.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>top.mqxu</groupId>
+    <groupId>top.sdy</groupId>
     <artifactId>spring-boot-course</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
