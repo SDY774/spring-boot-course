@@ -1,10 +1,10 @@
 package top.sdy.week1.controller;
 
-import jdk.jfr.Registered;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Registered
+@RestController
 public class MoodController {
     @Value("${my.mood.today}")
     private String today;
@@ -16,8 +16,7 @@ public class MoodController {
     private String author;
 
     @GetMapping("/mood")
-    public String getMood() {
-        return "今天是:" + today + ", 心情是:" + content+ ", 作者是:" + author;
+    public  String getMood(){
+        return "今天是"+today+",心情是："+content+",作者是："+author;
     }
-
 }
